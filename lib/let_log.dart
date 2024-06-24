@@ -11,9 +11,9 @@ part 'net_widget.dart';
 
 enum _Type { log, debug, warn, error }
 
-List<String> _printNames = ["😄", "🐛", "❗", "❌", "⬆️", "⬇️"];
-List<String> _tabNames = ["[Log]", "[Debug]", "[Warn]", "[Error]"];
-final RegExp _tabReg = RegExp(r"\[|\]");
+List<String>? _printNames = ["😄", "🐛", "❗", "❌", "⬆️", "⬇️"];
+List<String>? _tabNames = ["[Log]", "[Debug]", "[Warn]", "[Error]"];
+final RegExp? _tabReg = RegExp(r"\[|\]");
 
 String _getTabName(int index) {
   return _tabNames[index].replaceAll(_tabReg, "");
