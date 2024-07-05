@@ -339,7 +339,7 @@ class _Net extends ChangeNotifier {
     length.value++;
     if (Logger.config.printNet) {
       debugPrint(
-          "${_printNames[4]} ${'$type: '}${net.api}${net.req == null ? '' : '\nData: ${net.req}'}\n--------------------------------");
+          "${_printNames![4]} ${'$type: '}${net.api}${net.req == null ? '' : '\nData: ${net.req}'}\n--------------------------------");
     }
   }
 
@@ -370,7 +370,7 @@ class _Net extends ChangeNotifier {
     }
     if (Logger.config.printNet) {
       debugPrint(
-          "${_printNames[5]} ${net.type == null ? '' : '${net.type}: '}${net.api}${net.res == null ? '' : '\nData: ${net.res}'}\nSpend: ${net.spend} ms\n--------------------------------");
+          "${_printNames![5]} ${net.type == null ? '' : '${net.type}: '}${net.api}${net.res == null ? '' : '\nData: ${net.res}'}\nSpend: ${net.spend} ms\n--------------------------------");
     }
   }
 
