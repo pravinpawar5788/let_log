@@ -181,7 +181,7 @@ class _Log {
   }
 
   String get tabName {
-    return _tabNames[type!.index];
+    return _tabNames![type!.index];
   }
 
   bool contains(String keyword) {
