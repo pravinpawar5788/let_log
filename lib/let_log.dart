@@ -16,7 +16,7 @@ List<String>? _tabNames = ["[Log]", "[Debug]", "[Warn]", "[Error]"];
 final RegExp? _tabReg = RegExp(r"\[|\]");
 
 String _getTabName(int index) {
-  return _tabNames[index].replaceAll(_tabReg, "");
+  return _tabNames![index].replaceAll(_tabReg!, "");
 }
 
 class _Config {
