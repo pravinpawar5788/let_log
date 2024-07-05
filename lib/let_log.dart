@@ -177,7 +177,7 @@ class _Log {
   const _Log({this.type, this.message, this.detail, this.start});
 
   String get typeName {
-    return _printNames[type!.index];
+    return _printNames![type!.index];
   }
 
   String get tabName {
